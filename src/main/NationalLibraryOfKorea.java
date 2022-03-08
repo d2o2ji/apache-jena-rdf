@@ -121,15 +121,15 @@ public class NationalLibraryOfKorea {
 		
 //		2. SPARQL 질의문으로 DefaultModel에 데이터 담기
 		Query query = QueryFactory.create(queryString) ;
-        QueryExecution qexec = QueryExecutionFactory.create(query, ModelFactory.createDefaultModel()); 
+        	QueryExecution qexec = QueryExecutionFactory.create(query, ModelFactory.createDefaultModel()); 
 
-    	ResultSet rs = qexec.execSelect() ;
-    	ResultSetFormatter.out(System.out, rs, query) ;
+    		ResultSet rs = qexec.execSelect() ;
+    		ResultSetFormatter.out(System.out, rs, query) ;
     	
-//    	json으로 결과 출력
-//        ByteArrayOutputStream b = new ByteArrayOutputStream();
-//    	ResultSetFormatter.outputAsJSON(b, rs);
-//    	System.out.println(b);
+//    		json으로 결과 출력
+//        	ByteArrayOutputStream b = new ByteArrayOutputStream();
+//    		ResultSetFormatter.outputAsJSON(b, rs);
+//    		System.out.println(b);
 	}
 
 	public static void main(String[] args) {
